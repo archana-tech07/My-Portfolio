@@ -1,0 +1,1014 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A. Archana - Aspiring Software Engineer & 2nd-Year Computer Science and Engineering Student Portfolio. Strong in C, Java, HTML, and CSS.">
+  <meta name="keywords" content="A. Archana, Archana, Aspiring Software Engineer, Computer Science, CSE, St. Xavier's Catholic College of Engineering, Web Developer, Java, C">
+  <meta name="author" content="A. Archana">
+
+  <!-- Open Graph / Meta for Social Sharing -->
+  <meta property="og:title" content="A. Archana | Aspiring Software Engineer Portfolio">
+  <meta property="og:description" content="Portfolio of A. Archana, 2nd-year CSE student at St. Xavier's Catholic College of Engineering.">
+  <meta property="og:type" content="website">
+
+  <title>A. Archana | Aspiring Software Engineer Portfolio</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+
+  <!-- Google Fonts: Outfit (Headings) & Inter (Body) & JetBrains Mono (Code/Badges) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome 6.5.1 CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Ambient Gradient Background Mesh & Interactive Particles Canvas -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <header class="navbar-wrapper" id="header">
+    <nav class="navbar container" aria-label="Main Navigation">
+      <a href="#home" class="nav-brand" aria-label="A. Archana Homepage">
+        <span class="brand-code">&lt;</span><span class="brand-name">A. Archana</span><span class="brand-code">/&gt;</span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#home" class="nav-link active"><i class="fa-solid fa-house"></i> Home</a></li>
+        <li class="nav-item"><a href="#about" class="nav-link"><i class="fa-solid fa-user"></i> About</a></li>
+        <li class="nav-item"><a href="#skills" class="nav-link"><i class="fa-solid fa-code"></i> Skills</a></li>
+        <li class="nav-item"><a href="#projects" class="nav-link"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+        <li class="nav-item"><a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+        <li class="nav-item"><a href="#achievements" class="nav-link"><i class="fa-solid fa-award"></i> Achievements</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link"><i class="fa-solid fa-paper-plane"></i> Contact</a></li>
+      </ul>
+
+      <!-- Resume Button & Mobile Toggle -->
+      <div class="nav-actions">
+        <a href="assets/Archana_A_Resume.pdf" class="btn btn-primary btn-sm resume-btn" id="nav-resume-btn" download="Archana_A_Resume.pdf" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-download"></i> <span>Resume</span>
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Mobile Navigation Overlay Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <div class="drawer-header">
+      <span class="brand-name">A. Archana</span>
+      <button class="drawer-close" id="drawer-close" aria-label="Close navigation menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+    <ul class="drawer-menu">
+      <li><a href="#home" class="drawer-link"><i class="fa-solid fa-house"></i> Home</a></li>
+      <li><a href="#about" class="drawer-link"><i class="fa-solid fa-user"></i> About Me</a></li>
+      <li><a href="#skills" class="drawer-link"><i class="fa-solid fa-code"></i> Technical Skills</a></li>
+      <li><a href="#projects" class="drawer-link"><i class="fa-solid fa-laptop-code"></i> Projects</a></li>
+      <li><a href="#education" class="drawer-link"><i class="fa-solid fa-graduation-cap"></i> Education</a></li>
+      <li><a href="#achievements" class="drawer-link"><i class="fa-solid fa-award"></i> Internships & Achievements</a></li>
+      <li><a href="#contact" class="drawer-link"><i class="fa-solid fa-paper-plane"></i> Contact Me</a></li>
+    </ul>
+    <div class="drawer-footer">
+      <a href="assets/Archana_A_Resume.pdf" class="btn btn-primary btn-block" download="Archana_A_Resume.pdf" target="_blank" rel="noopener noreferrer">
+        <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+      </a>
+      <div class="drawer-socials">
+        <a href="https://github.com/archana-tech07" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/archana-a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </div>
+  <div class="backdrop" id="backdrop"></div>
+
+  <main>
+    <!-- 1. HERO / HOME SECTION -->
+    <section class="section hero-section" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="badge-pulse"></span>
+            <span class="badge-text"><i class="fa-solid fa-graduation-cap"></i> 2nd-Year CSE Student &bull; SXCCE</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hello, I'm <br>
+            <span class="gradient-text hero-name">A. Archana</span>
+          </h1>
+
+          <h2 class="hero-headline">Aspiring Software Engineer</h2>
+
+          <div class="hero-subtitle-wrapper">
+            <span class="hero-prefix"><i class="fa-solid fa-terminal"></i> Specialized in </span>
+            <span class="typing-text" id="typing-text">Aspiring Software Engineer</span>
+            <span class="cursor">&nbsp;</span>
+          </div>
+
+          <p class="hero-description">
+            Second-year Computer Science and Engineering student at <strong class="text-highlight">St. Xavier's Catholic College of Engineering</strong> with a 1st-Year CGPA of <strong class="text-highlight">8.71</strong>. 
+            Passionate about core programming in <span class="badge-pill">C</span> &amp; <span class="badge-pill">Java</span>, 
+            crafting responsive modern web interfaces with <span class="badge-pill">HTML</span> &amp; <span class="badge-pill">CSS</span>, 
+            and dedicated to writing clean, efficient code for real-world impact.
+          </p>
+
+          <div class="hero-cta-group">
+            <a href="#projects" class="btn btn-primary hero-btn">
+              <i class="fa-solid fa-laptop-code"></i> View Projects
+            </a>
+            <a href="#contact" class="btn btn-secondary hero-btn">
+              <i class="fa-solid fa-paper-plane"></i> Contact Me
+            </a>
+            <a href="assets/Archana_A_Resume.pdf" class="btn btn-outline hero-btn resume-btn" download="Archana_A_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+            </a>
+          </div>
+
+          <div class="hero-social-links">
+            <span class="social-label">Connect with me:</span>
+            <div class="social-icons">
+              <a href="https://github.com/archana-tech07" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Archana's GitHub Profile">
+                <i class="fa-brands fa-github"></i>
+                <span class="social-tooltip">GitHub</span>
+              </a>
+              <a href="https://www.linkedin.com/in/archana-a" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Archana's LinkedIn Profile">
+                <i class="fa-brands fa-linkedin-in"></i>
+                <span class="social-tooltip">LinkedIn</span>
+              </a>
+              <a href="mailto:archanacse.official@gmail.com" class="social-icon" aria-label="Send an Email">
+                <i class="fa-solid fa-envelope"></i>
+                <span class="social-tooltip">Email</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual / Floating Code Card -->
+        <div class="hero-visual">
+          <div class="code-card-wrapper">
+            <div class="code-card-glow"></div>
+            <div class="code-card glass-panel">
+              <div class="code-card-header">
+                <div class="window-dots">
+                  <span class="dot dot-red"></span>
+                  <span class="dot dot-yellow"></span>
+                  <span class="dot dot-green"></span>
+                </div>
+                <div class="window-title">
+                  <i class="fa-solid fa-terminal"></i> ArchanaProfile.java
+                </div>
+                <span class="code-lang">Java</span>
+              </div>
+              <div class="code-card-body">
+                <pre><code><span class="code-kw">public class</span> <span class="code-class">ArchanaProfile</span> {
+  <span class="code-kw">public static void</span> <span class="code-func">main</span>(String[] args) {
+    Student archana = <span class="code-kw">new</span> <span class="code-class">Student</span>();
+    archana.name = <span class="code-str">"A. Archana"</span>;
+    archana.major = <span class="code-str">"Computer Science &amp; Engg"</span>;
+    archana.college = <span class="code-str">"SXCCE"</span>;
+    archana.cgpa = <span class="code-num">8.71</span>; <span class="code-comment">// 1st Year CGPA</span>
+    archana.currentYear = <span class="code-num">2</span>;
+    
+    String[] skills = {
+      <span class="code-str">"C"</span>, <span class="code-str">"Java"</span>, <span class="code-str">"HTML5"</span>, <span class="code-str">"CSS3"</span>
+    };
+    
+    archana.buildFuture(skills);
+    System.out.println(<span class="code-str">"Ready to create impact!"</span>);
+  }
+}</code></pre>
+              </div>
+            </div>
+
+            <!-- Floating Status Badges -->
+            <div class="floating-badge badge-top-right glass-panel">
+              <div class="badge-icon"><i class="fa-solid fa-chart-line"></i></div>
+              <div class="badge-info">
+                <span class="badge-val">8.71</span>
+                <span class="badge-lbl">1st-Year CGPA</span>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left glass-panel">
+              <div class="badge-icon icon-code"><i class="fa-solid fa-laptop-code"></i></div>
+              <div class="badge-info">
+                <span class="badge-val">3+</span>
+                <span class="badge-lbl">Core Projects</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Down Indicator -->
+      <a href="#about" class="scroll-down-indicator" aria-label="Scroll to About Me section">
+        <span class="mouse-icon">
+          <span class="wheel"></span>
+        </span>
+        <span class="scroll-text">Scroll Down</span>
+      </a>
+    </section>
+
+    <!-- 2. ABOUT ME SECTION -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header reveal-fade-up">
+          <span class="section-tag"><i class="fa-solid fa-user-astronaut"></i> Discover My Story</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">Dedicated engineering student blending analytical problem solving with clean visual craft.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card-main glass-panel reveal-fade-up">
+            <div class="about-avatar-wrapper">
+              <div class="avatar-ring">
+                <div class="avatar-inner">
+                  <i class="fa-solid fa-user-graduate"></i>
+                </div>
+              </div>
+              <div class="avatar-meta">
+                <h3 class="avatar-name">A. Archana</h3>
+                <p class="avatar-role">B.E. Computer Science &amp; Engineering</p>
+                <span class="avatar-institution"><i class="fa-solid fa-building-columns"></i> St. Xavier's Catholic College of Engineering</span>
+              </div>
+            </div>
+
+            <div class="about-text-content">
+              <p>
+                I am a driven, enthusiastic <strong>second-year Computer Science and Engineering student</strong> at 
+                <strong>St. Xavier's Catholic College of Engineering</strong> (SXCCE). My journey in technology is driven by a deep 
+                curiosity to understand how systems operate under the hood and how software can be architected to solve practical challenges.
+              </p>
+              <p>
+                With a strong foundational grounding in <strong>C</strong> and <strong>Java</strong>, I have cultivated structured computational 
+                thinking, algorithmic logic, and object-oriented principles. Complementing my programming roots, I thoroughly enjoy designing 
+                aesthetic, responsive user interfaces using modern <strong>HTML</strong> and <strong>CSS</strong>.
+              </p>
+              <p>
+                In my first year of engineering, I maintained consistent academic diligence, securing a <strong>CGPA of 8.71</strong>. 
+                I actively seek opportunities to apply my knowledge in real-world projects, collaborate with peers, and prepare for impactful 
+                internships in software engineering and web development.
+              </p>
+            </div>
+
+            <div class="about-highlights-grid">
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-brain"></i></div>
+                <div class="highlight-details">
+                  <h4>Problem Solver</h4>
+                  <p>Strong algorithmic fundamentals in C and Java data structures.</p>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-palette"></i></div>
+                <div class="highlight-details">
+                  <h4>Web Enthusiast</h4>
+                  <p>Crafting sleek, responsive user layouts with semantic HTML5 &amp; CSS3.</p>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-book-open-reader"></i></div>
+                <div class="highlight-details">
+                  <h4>Fast Learner</h4>
+                  <p>Continuously expanding knowledge into modern developer tools and frameworks.</p>
+                </div>
+              </div>
+
+              <div class="highlight-item">
+                <div class="highlight-icon"><i class="fa-solid fa-people-group"></i></div>
+                <div class="highlight-details">
+                  <h4>Team Player</h4>
+                  <p>Engaged in peer learning, code collaboration, and technical initiatives.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Quick Facts Sidebar Card -->
+          <div class="about-sidebar glass-panel reveal-fade-left">
+            <h3 class="sidebar-title"><i class="fa-solid fa-id-card-clip"></i> Quick Facts</h3>
+            <ul class="fact-list">
+              <li>
+                <span class="fact-label"><i class="fa-solid fa-user"></i> Name</span>
+                <span class="fact-value">A. Archana</span>
+              </li>
+              <li>
+                <span class="fact-label"><i class="fa-solid fa-graduation-cap"></i> Degree</span>
+                <span class="fact-value">B.E. Computer Science &amp; Engg</span>
+              </li>
+              <li>
+                <span class="fact-label"><i class="fa-solid fa-university"></i> College</span>
+                <span class="fact-value">St. Xavier's Catholic College of Engg</span>
+              </li>
+              <li>
+                <span class="fact-label"><i class="fa-solid fa-calendar-check"></i> Academic Period</span>
+                <span class="fact-value">2025 &ndash; 2029 (2nd Year)</span>
+              </li>
+              <li>
+                <span class="fact-label"><i class="fa-solid fa-star"></i> 1st-Year CGPA</span>
+                <span class="fact-value highlight-pill">8.71 / 10.0</span>
+              </li>
+              <li>
+                <span class="fact-label"><i class="fa-brands fa-github"></i> GitHub</span>
+                <span class="fact-value"><a href="https://github.com/archana-tech07" target="_blank" rel="noopener noreferrer" class="link-inline">@archana-tech07</a></span>
+              </li>
+              <li>
+                <span class="fact-label"><i class="fa-solid fa-location-dot"></i> Location</span>
+                <span class="fact-value">Tamil Nadu, India</span>
+              </li>
+              <li>
+                <span class="fact-label"><i class="fa-solid fa-circle-check"></i> Status</span>
+                <span class="fact-value status-active"><span class="status-dot"></span> Open to Internships</span>
+              </li>
+            </ul>
+
+            <div class="sidebar-resume-cta">
+              <a href="assets/Archana_A_Resume.pdf" class="btn btn-primary btn-block resume-btn" download="Archana_A_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                <i class="fa-solid fa-file-arrow-down"></i> Get Full Resume (PDF)
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. TECHNICAL SKILLS SECTION -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header reveal-fade-up">
+          <span class="section-tag"><i class="fa-solid fa-microchip"></i> My Tech Stack</span>
+          <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+          <p class="section-subtitle">Core programming languages, markup, styling, and computer science foundations.</p>
+        </div>
+
+        <!-- Featured Skills Grid (C, Java, HTML, CSS, JavaScript) -->
+        <div class="featured-skills-grid">
+          <!-- 1. C Language -->
+          <div class="skill-card glass-panel" data-skill="c">
+            <div class="skill-card-top">
+              <div class="skill-icon-box c-icon">
+                <span class="c-symbol">C</span>
+              </div>
+              <div class="skill-badge">Procedural Logic</div>
+            </div>
+            <h3 class="skill-name">C Programming</h3>
+            <p class="skill-desc">
+              Strong grasp of procedural programming, pointers, dynamic memory allocation, structs, file handling, and algorithmic problem-solving.
+            </p>
+            <div class="skill-tags">
+              <span>Pointers</span>
+              <span>Memory Mgmt</span>
+              <span>Structures</span>
+              <span>Algorithms</span>
+            </div>
+            <div class="skill-competency">
+              <span>Area of Focus</span>
+              <span class="skill-competency-pill">Core &bull; Academic Rigor</span>
+            </div>
+          </div>
+
+          <!-- 2. Java -->
+          <div class="skill-card glass-panel" data-skill="java">
+            <div class="skill-card-top">
+              <div class="skill-icon-box java-icon">
+                <i class="fa-brands fa-java"></i>
+              </div>
+              <div class="skill-badge">Object-Oriented</div>
+            </div>
+            <h3 class="skill-name">Java</h3>
+            <p class="skill-desc">
+              Solid object-oriented programming concepts including classes, inheritance, polymorphism, encapsulation, exception handling, and collections.
+            </p>
+            <div class="skill-tags">
+              <span>OOP Concepts</span>
+              <span>Inheritance</span>
+              <span>Encapsulation</span>
+              <span>Collections</span>
+            </div>
+            <div class="skill-competency">
+              <span>Area of Focus</span>
+              <span class="skill-competency-pill">OOP &bull; Software Logic</span>
+            </div>
+          </div>
+
+          <!-- 3. HTML5 -->
+          <div class="skill-card glass-panel" data-skill="html">
+            <div class="skill-card-top">
+              <div class="skill-icon-box html-icon">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <div class="skill-badge">Web Architecture</div>
+            </div>
+            <h3 class="skill-name">HTML5</h3>
+            <p class="skill-desc">
+              Semantic markup, accessible web structuring (ARIA), modern form elements, multimedia embedding, and clean Document Object Model (DOM) layouts.
+            </p>
+            <div class="skill-tags">
+              <span>Semantic Elements</span>
+              <span>Accessibility</span>
+              <span>Forms &amp; Input</span>
+              <span>Clean DOM</span>
+            </div>
+            <div class="skill-competency">
+              <span>Area of Focus</span>
+              <span class="skill-competency-pill">Frontend Structure</span>
+            </div>
+          </div>
+
+          <!-- 4. CSS3 -->
+          <div class="skill-card glass-panel" data-skill="css">
+            <div class="skill-card-top">
+              <div class="skill-icon-box css-icon">
+                <i class="fa-brands fa-css3-alt"></i>
+              </div>
+              <div class="skill-badge">UI Styling</div>
+            </div>
+            <h3 class="skill-name">CSS3</h3>
+            <p class="skill-desc">
+              Modern responsive layouts with Flexbox and CSS Grid, custom properties, glassmorphism, keyframe animations, and mobile-first media queries.
+            </p>
+            <div class="skill-tags">
+              <span>Flexbox &amp; Grid</span>
+              <span>Animations</span>
+              <span>Glassmorphism</span>
+              <span>Responsive UI</span>
+            </div>
+            <div class="skill-competency">
+              <span>Area of Focus</span>
+              <span class="skill-competency-pill">Modern Responsive UI</span>
+            </div>
+          </div>
+
+          <!-- 5. JavaScript -->
+          <div class="skill-card glass-panel" data-skill="javascript">
+            <div class="skill-card-top">
+              <div class="skill-icon-box js-icon">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <div class="skill-badge">Interactivity</div>
+            </div>
+            <h3 class="skill-name">JavaScript</h3>
+            <p class="skill-desc">
+              Client-side scripting, DOM manipulation, event listeners, input validation, interactive UI components, and ES6+ fundamentals.
+            </p>
+            <div class="skill-tags">
+              <span>DOM Manipulation</span>
+              <span>Event Handling</span>
+              <span>Form Validation</span>
+              <span>ES6+ Syntax</span>
+            </div>
+            <div class="skill-competency">
+              <span>Area of Focus</span>
+              <span class="skill-competency-pill">Dynamic Interactions</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Supporting Competencies -->
+        <div class="supporting-skills-box glass-panel reveal-fade-up">
+          <h4 class="supporting-title"><i class="fa-solid fa-layer-group"></i> Complementary Knowledge &amp; Developer Tools</h4>
+          <div class="supporting-tags-container">
+            <div class="supporting-tag">
+              <i class="fa-brands fa-js"></i> JavaScript Basics &amp; DOM Manipulation
+            </div>
+            <div class="supporting-tag">
+              <i class="fa-brands fa-git-alt"></i> Git Version Control
+            </div>
+            <div class="supporting-tag">
+              <i class="fa-brands fa-github"></i> GitHub Collaboration
+            </div>
+            <div class="supporting-tag">
+              <i class="fa-solid fa-diagram-project"></i> Data Structures Fundamentals
+            </div>
+            <div class="supporting-tag">
+              <i class="fa-solid fa-code"></i> VS Code &amp; Dev Environments
+            </div>
+            <div class="supporting-tag">
+              <i class="fa-solid fa-mobile-screen"></i> Responsive Web Design
+            </div>
+            <div class="supporting-tag">
+              <i class="fa-solid fa-bug"></i> Problem Solving &amp; Debugging
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. PROJECTS SECTION -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header reveal-fade-up">
+          <span class="section-tag"><i class="fa-solid fa-folder-open"></i> Portfolio Showcase</span>
+          <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtitle">Real-world projects developed to solve practical problems and sharpen core engineering skills.</p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: StudySync -->
+          <article class="project-card glass-panel" data-project="studysync">
+            <div class="project-banner">
+              <div class="project-banner-bg banner-studysync"></div>
+              <div class="project-banner-overlay">
+                <span class="project-category"><i class="fa-solid fa-book-bookmark"></i> Study Resource Portal</span>
+                <span class="project-status">Featured Project</span>
+              </div>
+              <div class="project-icon-float">
+                <i class="fa-solid fa-graduation-cap"></i>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">StudySync</h3>
+              <p class="project-desc">
+                A student-focused website designed to organize study resources and provide a clean, user-friendly learning experience.
+              </p>
+
+              <div class="project-highlights">
+                <div class="ph-item"><i class="fa-solid fa-check"></i> Structured organization for academic notes &amp; syllabus</div>
+                <div class="ph-item"><i class="fa-solid fa-check"></i> Clean, responsive UI tailored for focused studying</div>
+                <div class="ph-item"><i class="fa-solid fa-check"></i> Rapid resource navigation across CSE subjects</div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill"><i class="fa-brands fa-html5"></i> HTML</span>
+                <span class="tech-pill"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                <span class="tech-pill"><i class="fa-brands fa-js"></i> JavaScript</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://archana-tech07.github.io/StudySync/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" aria-label="Open StudySync live demo">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+                <a href="https://github.com/archana-tech07/StudySync" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" aria-label="Open StudySync repository on GitHub">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Archana's Store -->
+          <article class="project-card glass-panel" data-project="store">
+            <div class="project-banner">
+              <div class="project-banner-bg banner-store"></div>
+              <div class="project-banner-overlay">
+                <span class="project-category"><i class="fa-solid fa-bag-shopping"></i> E-Commerce Web App</span>
+                <span class="project-status">Interactive Prototype</span>
+              </div>
+              <div class="project-icon-float">
+                <i class="fa-solid fa-store"></i>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Archana's Store</h3>
+              <p class="project-desc">
+                A responsive shopping website featuring product cards, product search, an Add to Cart button, cart count, and a contact popup.
+              </p>
+
+              <div class="project-highlights">
+                <div class="ph-item"><i class="fa-solid fa-check"></i> Product catalog with instant keyword search filtering</div>
+                <div class="ph-item"><i class="fa-solid fa-check"></i> Dynamic Add to Cart functionality with real-time cart count</div>
+                <div class="ph-item"><i class="fa-solid fa-check"></i> Interactive contact popup modal for user inquiries</div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill"><i class="fa-brands fa-html5"></i> HTML</span>
+                <span class="tech-pill"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+                <span class="tech-pill"><i class="fa-brands fa-js"></i> JavaScript</span>
+              </div>
+
+              <div class="project-actions">
+                <a href="https://archana-tech07.github.io/Archana-Store/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm" aria-label="Open Archana's Store live demo">
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                </a>
+                <a href="https://github.com/archana-tech07/Archana-Store" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm" aria-label="Open Archana's Store repository on GitHub">
+                  <i class="fa-brands fa-github"></i> GitHub
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: Smart Attendance Tracker -->
+          <article class="project-card glass-panel" data-project="attendance">
+            <div class="project-banner">
+              <div class="project-banner-bg banner-attendance"></div>
+              <div class="project-banner-overlay">
+                <span class="project-category"><i class="fa-solid fa-lightbulb"></i> Mini Hackathon Concept</span>
+                <span class="project-status">Concept Prototype</span>
+              </div>
+              <div class="project-icon-float">
+                <i class="fa-solid fa-clipboard-user"></i>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <h3 class="project-title">Smart Attendance Tracker</h3>
+              <p class="project-desc">
+                A mini hackathon project concept designed to reduce manual attendance work, discourage proxy attendance, and improve attendance accuracy.
+              </p>
+
+              <div class="project-highlights">
+                <div class="ph-item"><i class="fa-solid fa-check"></i> Proposed automated workflow to replace paper registers</div>
+                <div class="ph-item"><i class="fa-solid fa-check"></i> Designed mechanism to discourage and detect proxy entries</div>
+                <div class="ph-item"><i class="fa-solid fa-check"></i> Concept pitched during college mini hackathon challenge</div>
+              </div>
+
+              <div class="project-tech-stack">
+                <span class="tech-pill"><i class="fa-solid fa-diagram-project"></i> Concept Architecture</span>
+                <span class="tech-pill"><i class="fa-brands fa-java"></i> Java / C Logic</span>
+                <span class="tech-pill"><i class="fa-brands fa-html5"></i> Web Interface</span>
+              </div>
+
+              <div class="project-actions">
+                <button class="btn btn-primary btn-sm project-modal-trigger btn-block" data-project="attendance">
+                  <i class="fa-solid fa-circle-info"></i> Project Details
+                </button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="projects-github-banner glass-panel reveal-fade-up">
+          <div class="banner-content">
+            <div class="banner-icon"><i class="fa-brands fa-github"></i></div>
+            <div>
+              <h3>Explore more repositories on my GitHub</h3>
+              <p>Check out latest code experiments, assignments, and open-source contributions.</p>
+            </div>
+          </div>
+          <a href="https://github.com/archana-tech07" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
+            <i class="fa-brands fa-github"></i> Visit @archana-tech07
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. EDUCATION SECTION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header reveal-fade-up">
+          <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Academic Journey</span>
+          <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+          <p class="section-subtitle">Academic background, engineering curriculum, and scholastic milestones.</p>
+        </div>
+
+        <div class="education-timeline">
+          <!-- College Entry -->
+          <div class="timeline-item reveal-fade-up">
+            <div class="timeline-dot">
+              <i class="fa-solid fa-building-columns"></i>
+            </div>
+            <div class="timeline-content glass-panel">
+              <div class="timeline-badge-row">
+                <span class="timeline-period"><i class="fa-regular fa-calendar"></i> 2025 &ndash; 2029 (Expected)</span>
+                <span class="badge-status">In Progress &bull; 2nd Year</span>
+              </div>
+
+              <h3 class="timeline-degree">Bachelor of Engineering (B.E.) in Computer Science and Engineering</h3>
+              <h4 class="timeline-institution">
+                <i class="fa-solid fa-location-dot"></i> St. Xavier's Catholic College of Engineering
+              </h4>
+
+              <div class="timeline-score-card">
+                <div class="score-icon"><i class="fa-solid fa-medal"></i></div>
+                <div class="score-data">
+                  <span class="score-number">8.71</span>
+                  <span class="score-scale">/ 10.0 CGPA</span>
+                  <p class="score-caption">First-Year Cumulative Grade Point Average</p>
+                </div>
+              </div>
+
+              <p class="timeline-desc">
+                Currently pursuing in-depth coursework in core computer science disciplines. Actively engaging in laboratory practicals, algorithmic problem solving, object-oriented software development, and technical symposium events.
+              </p>
+
+              <div class="timeline-coursework">
+                <h5>Key Academic Focus Areas:</h5>
+                <div class="course-chips">
+                  <span><i class="fa-solid fa-check"></i> Programming in C &amp; Data Structures</span>
+                  <span><i class="fa-solid fa-check"></i> Object-Oriented Programming (Java)</span>
+                  <span><i class="fa-solid fa-check"></i> Web Technology &amp; UI Design</span>
+                  <span><i class="fa-solid fa-check"></i> Discrete Mathematics &amp; Logic</span>
+                  <span><i class="fa-solid fa-check"></i> Digital Principles &amp; Computer Architecture</span>
+                  <span><i class="fa-solid fa-check"></i> Database Concepts</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. INTERNSHIPS & ACHIEVEMENTS SECTION -->
+    <section class="section achievements-section" id="achievements">
+      <div class="container">
+        <div class="section-header reveal-fade-up">
+          <span class="section-tag"><i class="fa-solid fa-trophy"></i> Recognition &amp; Experience</span>
+          <h2 class="section-title">Internships &amp; <span class="gradient-text">Achievements</span></h2>
+          <p class="section-subtitle">Academic honors, practical experiences, technical workshops, and milestones.</p>
+        </div>
+
+        <div class="achievements-grid">
+          <!-- Achievement 1: Mini Hackathon -->
+          <div class="achievement-card glass-panel">
+            <div class="achievement-icon-wrapper bulb-gradient">
+              <i class="fa-solid fa-lightbulb"></i>
+            </div>
+            <div class="achievement-body">
+              <div class="achievement-tag">Mini Hackathon</div>
+              <h3 class="achievement-title">Smart Attendance Tracker Concept</h3>
+              <p class="achievement-org">SXCCE College Mini Hackathon</p>
+              <p class="achievement-desc">
+                Conceptualized and pitched the Smart Attendance Tracker concept during a college mini hackathon. Focused on system architecture to eliminate manual roll-call paperwork, discourage proxy attendance, and optimize classroom logging accuracy.
+              </p>
+              <div class="achievement-meta">
+                <span><i class="fa-solid fa-code-commit"></i> Hackathon Concept</span>
+                <span><i class="fa-solid fa-check"></i> System Design Pitch</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Achievement 2: Design to Prototype Bootcamp -->
+          <div class="achievement-card glass-panel">
+            <div class="achievement-icon-wrapper rocket-gradient">
+              <i class="fa-solid fa-compass-drafting"></i>
+            </div>
+            <div class="achievement-body">
+              <div class="achievement-tag">Bootcamp Experience</div>
+              <h3 class="achievement-title">Design to Prototype Bootcamp</h3>
+              <p class="achievement-org">Hands-on Web Design &amp; Prototyping Workshop</p>
+              <p class="achievement-desc">
+                Participated in an intensive bootcamp exploring modern UI/UX design workflows, wireframing, component-based layout planning, and translating design concepts into functional, responsive web layouts.
+              </p>
+              <div class="achievement-meta">
+                <span><i class="fa-solid fa-palette"></i> UI/UX &amp; Prototyping</span>
+                <span><i class="fa-solid fa-laptop-code"></i> Frontend Workflow</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Achievement 3: AI Fake News Detection Hackathon -->
+          <div class="achievement-card glass-panel">
+            <div class="achievement-icon-wrapper code-gradient">
+              <i class="fa-solid fa-robot"></i>
+            </div>
+            <div class="achievement-body">
+              <div class="achievement-tag">AI Hackathon Project</div>
+              <h3 class="achievement-title">AI Fake News Detection Hackathon</h3>
+              <p class="achievement-org">AI &amp; Natural Language Processing Event</p>
+              <p class="achievement-desc">
+                Engaged in an AI hackathon exploring machine learning and natural language processing concepts for evaluating article authenticity, extracting text features, and detecting misleading information patterns.
+              </p>
+              <div class="achievement-meta">
+                <span><i class="fa-solid fa-brain"></i> NLP &amp; ML Fundamentals</span>
+                <span><i class="fa-solid fa-magnifying-glass"></i> Misinformation Detection</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Achievement 4: Academic Excellence -->
+          <div class="achievement-card glass-panel">
+            <div class="achievement-icon-wrapper crown-gradient">
+              <i class="fa-solid fa-crown"></i>
+            </div>
+            <div class="achievement-body">
+              <div class="achievement-tag">Academic Merit</div>
+              <h3 class="achievement-title">First-Year Academic Distinction</h3>
+              <p class="achievement-org">St. Xavier's Catholic College of Engineering</p>
+              <p class="achievement-desc">
+                Secured a distinguished <strong>8.71 CGPA</strong> in the first year of Computer Science and Engineering, demonstrating consistent analytical rigor, strong foundational understanding, and high academic performance.
+              </p>
+              <div class="achievement-meta">
+                <span><i class="fa-regular fa-star"></i> CGPA: 8.71 / 10.0</span>
+                <span><i class="fa-solid fa-building-columns"></i> SXCCE CSE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CONTACT ME SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header reveal-fade-up">
+          <span class="section-tag"><i class="fa-solid fa-envelope-open-text"></i> Let's Connect</span>
+          <h2 class="section-title">Contact <span class="gradient-text">Me</span></h2>
+          <p class="section-subtitle">Interested in collaborating, internship opportunities, or discussing tech? Feel free to reach out!</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Contact Information Cards -->
+          <div class="contact-info-column">
+            <!-- GitHub Profile (Active) -->
+            <div class="contact-card glass-panel">
+              <div class="contact-icon icon-github"><i class="fa-brands fa-github"></i></div>
+              <div class="contact-details">
+                <h4>GitHub Profile</h4>
+                <p>Explore codebases, repositories, and open-source contributions.</p>
+                <a href="https://github.com/archana-tech07" target="_blank" rel="noopener noreferrer" class="contact-link">
+                  github.com/archana-tech07 <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- LinkedIn Profile (Clearly Marked Placeholder) -->
+            <div class="contact-card glass-panel">
+              <div class="contact-icon icon-linkedin"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="contact-details">
+                <h4>LinkedIn Profile</h4>
+                <p>Professional networking and career connection.</p>
+                <span class="placeholder-text">linkedin.com/in/[your-linkedin-username]</span>
+                <span class="placeholder-badge"><i class="fa-solid fa-pen-ruler"></i> Placeholder &bull; Add Your LinkedIn Handle</span>
+              </div>
+            </div>
+
+            <!-- Email (Clearly Marked Placeholder) -->
+            <div class="contact-card glass-panel">
+              <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-details">
+                <h4>Email Address</h4>
+                <p>Direct inquiries, collaboration, and internship communications.</p>
+                <span class="placeholder-text">[your.email@example.com]</span>
+                <span class="placeholder-badge"><i class="fa-solid fa-pen-ruler"></i> Placeholder &bull; Add Your Email Address</span>
+              </div>
+            </div>
+
+            <!-- College & Location -->
+            <div class="contact-card glass-panel">
+              <div class="contact-icon icon-location"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-details">
+                <h4>College &amp; Location</h4>
+                <p>St. Xavier's Catholic College of Engineering</p>
+                <span class="contact-plain">Chunkankadai, Nagercoil, Tamil Nadu, India</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Contact Form -->
+          <div class="contact-form-column glass-panel reveal-fade-left">
+            <h3 class="form-title"><i class="fa-solid fa-paper-plane"></i> Send a Message</h3>
+            <p class="form-subtitle">Fill in the form below and I will get back to you promptly.</p>
+
+            <form id="contact-form" class="contact-form" novalidate>
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-user input-icon"></i>
+                  <input type="text" id="name" name="name" class="form-input" placeholder="e.g. Alex Morgan" required>
+                </div>
+                <span class="error-msg" id="name-error">Please enter your name</span>
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address <span class="required">*</span></label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-envelope input-icon"></i>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="e.g. alex@example.com" required>
+                </div>
+                <span class="error-msg" id="email-error">Please enter a valid email address</span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <div class="input-wrapper">
+                  <i class="fa-solid fa-tag input-icon"></i>
+                  <input type="text" id="subject" name="subject" class="form-input" placeholder="e.g. Internship Inquiry / Project Discussion">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message" class="form-label">Message <span class="required">*</span></label>
+                <div class="input-wrapper textarea-wrapper">
+                  <i class="fa-solid fa-message input-icon"></i>
+                  <textarea id="message" name="message" rows="5" class="form-input" placeholder="Hello Archana, I came across your portfolio and..." required></textarea>
+                </div>
+                <span class="error-msg" id="message-error">Please write your message</span>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">
+                <span>Send Message</span> <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+
+            <div class="form-success-toast" id="form-success-toast" role="alert" aria-live="polite">
+              <i class="fa-solid fa-circle-check"></i>
+              <div>
+                <strong>Thank you!</strong>
+                <p>Your message has been received. I will respond to your email soon.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. RESUME CALLOUT BANNER SECTION -->
+    <section class="section resume-banner-section">
+      <div class="container">
+        <div class="resume-callout glass-panel reveal-fade-up">
+          <div class="resume-callout-glow"></div>
+          <div class="resume-callout-content">
+            <span class="callout-tag"><i class="fa-solid fa-file-lines"></i> Professional Profile</span>
+            <h2 class="callout-title">Interested in my complete academic &amp; technical credentials?</h2>
+            <p class="callout-desc">
+              Download my complete curriculum vitae including coursework details, project highlights, technical skills, and academic achievements.
+            </p>
+          </div>
+          <div class="resume-callout-action">
+            <a href="assets/Archana_A_Resume.pdf" class="btn btn-primary btn-lg resume-btn" download="Archana_A_Resume.pdf" target="_blank" rel="noopener noreferrer">
+              <i class="fa-solid fa-file-arrow-down"></i> Download Resume (PDF)
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Project Details Modal -->
+  <div class="modal" id="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-dialog glass-panel">
+      <button class="modal-close" id="modal-close" aria-label="Close dialog">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div class="modal-header">
+        <span class="modal-category" id="modal-category">Project Category</span>
+        <h3 class="modal-title" id="modal-title">Project Title</h3>
+      </div>
+      <div class="modal-body" id="modal-body">
+        <!-- Injected via JavaScript -->
+      </div>
+      <div class="modal-footer" id="modal-footer">
+        <a href="https://github.com/archana-tech07" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modal-github-link">
+          <i class="fa-brands fa-github"></i> View on GitHub
+        </a>
+        <button class="btn btn-outline" id="modal-close-btn">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-notification" id="toast-notification" role="status" aria-live="polite"></div>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top of page">
+    <svg class="progress-ring" width="48" height="48">
+      <circle class="progress-ring-circle" stroke="rgba(139, 92, 246, 0.2)" stroke-width="3" fill="transparent" r="21" cx="24" cy="24"/>
+      <circle class="progress-ring-fill" id="progress-fill" stroke="#8b5cf6" stroke-width="3" fill="transparent" r="21" cx="24" cy="24"/>
+    </svg>
+    <i class="fa-solid fa-arrow-up back-to-top-icon"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="brand-code">&lt;</span><span class="brand-name">Archana</span><span class="brand-dot">.A</span><span class="brand-code">/&gt;</span>
+        <p class="footer-tagline">2nd-Year Computer Science &amp; Engineering Student &bull; SXCCE</p>
+      </div>
+
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="footer-socials">
+        <a href="https://github.com/archana-tech07" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/archana-a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="mailto:archana.tech07@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container footer-bottom-inner">
+        <p>&copy; <span id="current-year"></span> A. Archana. Crafted with modern HTML, CSS &amp; JavaScript.</p>
+        <p class="footer-college-tag">St. Xavier's Catholic College of Engineering (CSE 2025&ndash;2029)</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>

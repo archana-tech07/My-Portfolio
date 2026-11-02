@@ -1,0 +1,256 @@
+%PDF-1.4
+1 0 obj
+<<
+  /Type /Catalog
+  /Pages 2 0 R
+>>
+endobj
+2 0 obj
+<<
+  /Type /Pages
+  /Kids [3 0 R]
+  /Count 1
+>>
+endobj
+3 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 612 842]
+  /Contents 4 0 R
+  /Resources <<
+    /Font <<
+      /F1 5 0 R
+      /F2 6 0 R
+    >>
+  >>
+>>
+endobj
+4 0 obj
+<<
+  /Length 2933
+>>
+stream
+BT
+/F2 20 Tf
+36 780 Td
+0.1 0.15 0.35 rg
+(ARCHANA. A) Tj
+ET
+
+BT
+/F1 10.5 Tf
+36 764 Td
+0.3 0.35 0.5 rg
+(Second-Year Computer Science and Engineering Student) Tj
+ET
+
+BT
+/F1 9 Tf
+36 748 Td
+0.4 0.4 0.45 rg
+(St. Xavier's Catholic College of Engineering  |  GitHub: https://github.com/archana-tech07) Tj
+ET
+
+% Horizontal rule
+0.7 0.75 0.9 RG
+1 w
+36 738 m 576 738 l S
+
+% SECTION: EDUCATION
+BT
+/F2 12 Tf
+36 718 Td
+0.15 0.25 0.55 rg
+(EDUCATION) Tj
+ET
+
+BT
+/F2 10 Tf
+36 700 Td
+0.1 0.1 0.1 rg
+(St. Xavier's Catholic College of Engineering) Tj
+ET
+
+BT
+/F1 9.5 Tf
+470 700 Td
+0.3 0.3 0.3 rg
+(2025 - 2029) Tj
+ET
+
+BT
+/F1 9.5 Tf
+36 686 Td
+0.25 0.25 0.3 rg
+(Bachelor of Engineering (B.E.) in Computer Science and Engineering) Tj
+ET
+
+BT
+/F2 9.5 Tf
+36 672 Td
+0.05 0.5 0.3 rg
+(First-Year Cumulative Grade Point Average: 8.71 / 10.0) Tj
+ET
+
+% SECTION: TECHNICAL SKILLS
+BT
+/F2 12 Tf
+36 648 Td
+0.15 0.25 0.55 rg
+(TECHNICAL SKILLS) Tj
+ET
+
+BT
+/F2 9.5 Tf
+36 630 Td
+0.2 0.2 0.2 rg
+(Programming Languages: ) Tj
+/F1 9.5 Tf
+(C, Java) Tj
+ET
+
+BT
+/F2 9.5 Tf
+36 614 Td
+0.2 0.2 0.2 rg
+(Web Technologies: ) Tj
+/F1 9.5 Tf
+(HTML5, CSS3, JavaScript (Basics), Responsive Web Design) Tj
+ET
+
+BT
+/F2 9.5 Tf
+36 598 Td
+0.2 0.2 0.2 rg
+(Developer Tools & Concepts: ) Tj
+/F1 9.5 Tf
+(Git, GitHub, VS Code, Object-Oriented Programming, Data Structures Fundamentals) Tj
+ET
+
+% SECTION: ACADEMIC PROJECTS
+BT
+/F2 12 Tf
+36 574 Td
+0.15 0.25 0.55 rg
+(PROJECTS) Tj
+ET
+
+BT
+/F2 10 Tf
+36 556 Td
+0.1 0.1 0.1 rg
+(1. StudySync - Collaborative Student Platform) Tj
+ET
+BT
+/F1 9 Tf
+36 542 Td
+0.3 0.3 0.35 rg
+(- Designed a responsive student productivity portal for CSE notes sharing and task tracking.) Tj
+ET
+BT
+/F1 9 Tf
+36 530 Td
+0.4 0.4 0.45 rg
+(  Tech: HTML5, CSS3, JavaScript, Responsive Flexbox/Grid) Tj
+ET
+
+BT
+/F2 10 Tf
+36 508 Td
+0.1 0.1 0.1 rg
+(2. Archana's Store - Modern E-Commerce Web App) Tj
+ET
+BT
+/F1 9 Tf
+36 494 Td
+0.3 0.3 0.35 rg
+(- Built an interactive front-end store featuring product catalogs, live search, and dynamic cart logic.) Tj
+ET
+BT
+/F1 9 Tf
+36 482 Td
+0.4 0.4 0.45 rg
+(  Tech: HTML5, CSS3, JavaScript, Client-side State Management) Tj
+ET
+
+BT
+/F2 10 Tf
+36 460 Td
+0.1 0.1 0.1 rg
+(3. Smart Attendance Tracker) Tj
+ET
+BT
+/F1 9 Tf
+36 446 Td
+0.3 0.3 0.35 rg
+(- Developed an academic attendance monitoring tool to automate percentage computation & alert shortage.) Tj
+ET
+BT
+/F1 9 Tf
+36 434 Td
+0.4 0.4 0.45 rg
+(  Tech: Java / C Core Logic, HTML5, CSS3) Tj
+ET
+
+% SECTION: ACHIEVEMENTS & EXTRACURRICULAR
+BT
+/F2 12 Tf
+36 410 Td
+0.15 0.25 0.55 rg
+(ACHIEVEMENTS & MILESTONES) Tj
+ET
+
+BT
+/F1 9.5 Tf
+36 392 Td
+0.25 0.25 0.3 rg
+(- First-Year Academic Excellence: Awarded distinction with 8.71 CGPA at SXCCE.) Tj
+ET
+
+BT
+/F1 9.5 Tf
+36 376 Td
+0.25 0.25 0.3 rg
+(- Actively participated in departmental technical symposiums and hands-on programming workshops.) Tj
+ET
+
+BT
+/F1 9.5 Tf
+36 360 Td
+0.25 0.25 0.3 rg
+(- Open to summer and winter internships in Software Development and Web Engineering.) Tj
+ET
+endstream
+endobj
+5 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica
+>>
+endobj
+6 0 obj
+<<
+  /Type /Font
+  /Subtype /Type1
+  /BaseFont /Helvetica-Bold
+>>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000009 00000 n 
+0000000062 00000 n 
+0000000125 00000 n 
+0000000293 00000 n 
+0000003280 00000 n 
+0000003356 00000 n 
+trailer
+<<
+  /Size 7
+  /Root 1 0 R
+>>
+startxref
+3437
+%%EOF
